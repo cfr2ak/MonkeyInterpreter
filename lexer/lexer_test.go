@@ -13,7 +13,8 @@ func TestNextToken(t *testing.T) {
 		x + y;
 	};
 	
-	let result = add(five, ten)`
+	let result = add(five, ten);`
+
 	tests := []struct {
 		expectedType    token.TokenType
 		expectedLiteral string
